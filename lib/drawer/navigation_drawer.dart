@@ -16,7 +16,14 @@ class NavigationDrawer extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(child: new Text("Flutter page"),),
+      body:new Row /*or Column*/(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          new Icon(Icons.star, size: 50.0),
+          new Icon(Icons.star, size: 50.0),
+          new Icon(Icons.star, size: 50.0),
+        ],
+      ),
 
       drawer: new Drawer(
         child: new ListView(
