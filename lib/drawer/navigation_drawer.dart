@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../tabbar/tab_layout_page.dart';
+import '../list_view/list_view_adapter.dart';
 class NavigationDrawer extends StatelessWidget{
 
   final String title;
@@ -16,12 +17,21 @@ class NavigationDrawer extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body:new Row /*or Column*/(
-        mainAxisAlignment: MainAxisAlignment.start,
+
+      body: Stack(
+        fit: StackFit.expand,
         children: <Widget>[
-          new Icon(Icons.star, size: 50.0),
-          new Icon(Icons.star, size: 50.0),
-          new Icon(Icons.star, size: 50.0),
+          Material(color: Colors.yellowAccent),
+          Positioned(
+            top: 0.0,
+            left: 0.0,
+            child: Icon(Icons.star, size: 50.0),
+          ),
+          Positioned(
+            top: 380.0,
+            left: 270.0,
+            child: Icon(Icons.call, size: 50.0),
+          ),
         ],
       ),
 
@@ -41,14 +51,15 @@ class NavigationDrawer extends StatelessWidget{
             },
             ),
             new ListTile(
-              title: new Text("Drawer Item 2"),
+              title: new Text("List view and adapter"),
               onTap: (){
                 Navigator.pop(context);
+                Navigator.push(context, new MaterialPageRoute(builder: (context) => new SimpleApp()));
               },
             ),
 
             new ListTile(
-              title: new Text("Drawer Item 3"),
+              title: new Text("Tab layout"),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, new MaterialPageRoute(builder: (context) => new TabBarDemo()));
