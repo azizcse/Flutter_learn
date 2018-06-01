@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'drawer/navigation_drawer.dart';
 import 'content_details/contentDetails.dart';
+import 'page/home_page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -12,8 +13,10 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-       home: new NavigationDrawer(title: 'Flutter Demo Home Page'),
+       //home: new NavigationDrawer(title: 'Flutter Demo Home Page'),
       //home: new MyHomePage(),
+
+      home: new HomePage(),
     );
   }
 }
