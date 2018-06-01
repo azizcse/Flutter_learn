@@ -2,24 +2,14 @@ import 'package:flutter/material.dart';
 import '../tabbar/tab_layout_page.dart';
 import '../list_view/list_view_adapter.dart';
 import '../model/Person.dart';
-
-
-class DrawerItem{
-  String name;
-  IconData iconData;
-  DrawerItem(this.name,this.iconData);
-}
-
-class NavigationDrawer extends StatelessWidget {
+class NavigationDrawer extends StatelessWidget{
 
   final String title;
-  final drawerItems = [
-    new DrawerItem("Drawer Item 1", Icons.access_alarms),
-  ]; 
+
   NavigationDrawer({
     Key key,
     this.title,
-  }) :super(key: key);
+  }):super(key : key);
 
 
   @override
@@ -28,23 +18,7 @@ class NavigationDrawer extends StatelessWidget {
       appBar: new AppBar(
         title: new Text(title),
       ),
-
-      body: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          Material(color: Colors.yellowAccent),
-          Positioned(
-            top: 0.0,
-            left: 0.0,
-            child: Icon(Icons.star, size: 50.0),
-          ),
-          Positioned(
-            top: 380.0,
-            left: 270.0,
-            child: Icon(Icons.call, size: 50.0),
-          ),
-        ],
-      ),
+      body: new Center(child: new Text("Flutter page"),),
 
       drawer: new Drawer(
         child: new ListView(
