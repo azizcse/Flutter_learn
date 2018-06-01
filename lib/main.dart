@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
       ),
       //home: new NavigationDrawer(title: 'Flutter Demo Home Page'),
        // home: new MyHomePage(),
-      home: new PetMain(),
+      home: new Scaffold(
+        body: new PetMain(),
+      )
     );
   }
 }

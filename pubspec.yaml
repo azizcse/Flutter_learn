@@ -23,11 +23,11 @@ dev_dependencies:
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
   cupertino_icons: ^0.1.0
-   english_words: ^3.1.0
-   sqflite: any
-   url_launcher : ^2.0.2
+  english_words: ^3.1.0
+  sqflite: any
+  url_launcher : ^2.0.2
 
-   path_provider: ^0.3.1
+  path_provider: ^0.3.1
 
 
 
