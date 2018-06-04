@@ -56,6 +56,7 @@ class PetMainState extends State<PetMain> {
               new MaterialPageRoute(builder: (context) => new AddPet()),
             );
           },
+          // ignore: argument_type_not_assignable
           child: new Icon(
             Icons.add,
           ),

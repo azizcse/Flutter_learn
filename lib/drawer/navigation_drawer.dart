@@ -45,14 +45,7 @@ class NavigationDrawer extends StatelessWidget{
             new ListTile(title: new Text("Drawer iten 1"),
               onTap: () {
                 Navigator.pop(context);
-                var person = Person.create(7878, "Aziz", "Bashupara", 34);
-                var person2 = Person.create(7878, "Azihtz", "Bashupgfhara", 54);
 
-                if (person == person2) {
-                  print("Object are same");
-                } else {
-                  print("Object not same");
-                }
               },
             ),
             new ListTile(

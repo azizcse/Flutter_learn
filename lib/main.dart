@@ -3,6 +3,7 @@ import 'drawer/navigation_drawer.dart';
 import 'content_details/contentDetails.dart';
 import 'page/home_page.dart';
 import 'petshop//Pet.dart';
+import 'exercise/exercise_file.dart';
 
 void main() => runApp(new MyApp());
 
@@ -17,9 +18,11 @@ class MyApp extends StatelessWidget {
       //home: new NavigationDrawer(title: 'Flutter Demo Home Page'),
        // home: new MyHomePage(),
        // home: new HomePage(),
-      home: new Scaffold(
+     /* home: new Scaffold(
         body: new PetMain(),
-      )
+      )*/
+
+     home: new BasicAppBarSample(),
     );
   }
 }
